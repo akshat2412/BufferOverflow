@@ -23,6 +23,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/elegent-icons.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/header.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/themes.css",
               "src/styles.css"
             ],
             "scripts": []

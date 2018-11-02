@@ -1,3 +1,26 @@
-<p>
-  dashboard works!
-</p>
+
+<div class="padding">
+    <div class="container">
+        <div class="row button-row mt20" *ngIf = "isLoggedIn">
+            <div class="col-md-2">
+                <button class = "list-button" [class.list-button-active] = "showUserFeed" (click) = "toggleList('userFeed')">Your Feed</button>
+            </div>
+            <div class="col-md-2">
+                <button class = "list-button" [class.list-button-active] = "showGlobalFeed" (click) = "toggleList('globalFeed')">Global Feed</button>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col-sm-8" *ngIf = "showUserFeed && isLoggedIn">
+                <app-user-feed [username] = "username"></app-user-feed>
+            </div> -->
+            <div class="col-sm-8">  <!--*ngIf = "showGlobalFeed"-->
+                <app-questions-list></app-questions-list>
+            </div>
+            <div class="col-sm-4">
+                <aside class="sidebar text-center">
+                    <app-tagbox (clickedButton) = "handleTagClick($event)"></app-tagbox>
+                </aside>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>

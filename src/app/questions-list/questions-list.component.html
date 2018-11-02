@@ -1,0 +1,8 @@
+<div *ngIf = "questions; else loading" class="list-posts">
+  <div *ngIf = "questions.length > 0; else noQuestions">
+    <app-question-list-item *ngFor = "let question of questions" [questionData] = "question"></app-question-list-item>
+  </div>
+  <ng-template #noQuestions><p>No Questions</p></ng-template>
+</div><!-- /.list-posts -->
+<!-- <app-pagination [questionsCount] = "questionsCount" (requestedPage) = "loadPage($event)"></app-pagination> -->
+<ng-template #loading> <p>Loading Questions</p></ng-template>

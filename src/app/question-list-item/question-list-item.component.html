@@ -1,0 +1,19 @@
+<article class="post type-post media">
+  <!-- <div class="col-sm-2 mt20">
+    <app-user-profile-link [User] = "articleData.author"></app-user-profile-link>
+  </div> -->
+    <div class="entry-content media-body">
+        <!-- <span class="category"><a href="categories.html">Lifestyle</a></span>/.category -->
+        <h2 class="entry-title"><a [routerLink]="['/questions', questionData.id]">{{questionData.title}}</a></h2><!-- /.entry-title -->
+        <div>Asked by: <app-user-profile-name [userName] = "questionData.author.userName"></app-user-profile-name></div>
+        <p>
+          {{questionData.description}}    
+        </p>
+        <div class="pull-right">
+
+          <a class="btn" *ngIf = "questionData.answerCount == 1">{{questionData.answerCount}} Answer</a>
+          <a class="btn" *ngIf = "questionData.answerCount != 1">{{questionData.answerCount}} Answers</a>
+        </div>
+        <a [routerLink] = "['/questions', questionData.id]" class="btn">Read more</a><!-- /.btn -->
+    </div><!-- /.entry-content -->
+</article><!-- /.post -->

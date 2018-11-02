@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* @import './assets/css/bootstrap.min.css';
+@import './assets/css/elegent-icons.css';
+@import './assets/css/font-awesome.min.css';
+@import './assets/css/header.css';
+@import './assets/css/responsive.css';
+@import './assets/css/style.css';
+@import './assets/css/themes.css'; */
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.activeroute {
+    color: #af7152;
+}
+
+input[disabled]{
+    cursor: not-allowed !important;
+}
+
+em {
+    float: right;
+    color: red;
+    display: inline-block;
+}
+
+.errormessage {
+    color: red;
+    font-weight: 600;
+    list-style: none;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.like-icon-unselected {
+    background-color: white;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}
+.like-icon-unselected:hover {
+    background-color: lightgreen;
+    color: white;
+    border: 1px solid lightgreen;
+}
+.like-icon-selected {
+    background-color: lightgreen;
+    color: white;
+    border: 1px solid lightgreen;
+}
+.like-icon-selected:hover {
+    background-color: white;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+}

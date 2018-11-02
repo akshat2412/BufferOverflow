@@ -1,0 +1,7 @@
+<div class="widget widget_insta_feed">
+    <h3 class="widget-title">Popular Tags</h3><!-- /.widget-title -->
+    <div class="widget-details" *ngIf = "tags; else loading" style="display: block;">
+      <app-tag-button *ngFor = "let tag of tags" [text] = "tag" (clickedButton)="emitClickedButton($event)"></app-tag-button>
+    </div><!-- /.widget-details -->
+    <ng-template #loading><p>Loading Tags</p></ng-template>
+  </div><!-- /.widget -->  

@@ -1,0 +1,25 @@
+img {
+    height: 32px;
+    width: 32px;
+    border-radius: 30px;
+}
+
+p {
+    color: green;
+    font-size: 14px;
+}
+
+.name-link{
+    font-size: 14px;
+    color: black;
+}
+
+.name-link:hover {
+    color: lightgreen !important; 
+}
+
+h3 {
+    display: inline;
+    font-size: 15px;
+}
+
